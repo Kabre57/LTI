@@ -4,13 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PreloaderComponent } from './components/common/preloader/preloader.component';
-import { HomePageOneComponent } from './components/pages/home-page-one/home-page-one.component';
-import { HomePageTwoComponent } from './components/pages/home-page-two/home-page-two.component';
-import { HomePageThreeComponent } from './components/pages/home-page-three/home-page-three.component';
-import { FooterStyleOneComponent } from './components/common/footer-style-one/footer-style-one.component';
-import { NavbarStyleOneComponent } from './components/common/navbar-style-one/navbar-style-one.component';
-import { FooterStyleTwoComponent } from './components/common/footer-style-two/footer-style-two.component';
-import { NavbarStyleTwoComponent } from './components/common/navbar-style-two/navbar-style-two.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { NavbarComponent } from './components/common/navbar/navbar.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { PricingComponent } from './components/pages/pricing/pricing.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
@@ -33,17 +29,13 @@ import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     PreloaderComponent,
-    HomePageOneComponent,
-    HomePageTwoComponent,
-    HomePageThreeComponent,
-    FooterStyleOneComponent,
-    NavbarStyleOneComponent,
-    FooterStyleTwoComponent,
-    NavbarStyleTwoComponent,
+    NavbarComponent,
+    FooterComponent,
     AboutComponent,
     PricingComponent,
     FaqComponent,
@@ -64,7 +56,9 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     ProductsDetailsComponent,
     BlogComponent,
     BlogDetailsComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
